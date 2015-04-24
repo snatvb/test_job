@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title Вход
+    %meta{:charset => "UTF-8"}
+    %meta{:content => "", :name => "keywords"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "INDEX,FOLLOW", :name => "robots"}
+    %meta{:content => "ru", "http-equiv" => "Content-Language"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "css/normalize.css", :rel => "stylesheet"}
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+  %body
+    %main
+      .centrolize-panel
+        .center-panel
+          .padding-panel.title
+            %span Вход
+            .pull-right
+              %a{href:"register.html"} Регистрация
+          .padding-panel
+            .input-rows.mt10px
+              .input-row
+                %input.form-control{ type:"email", placeholder:"Электронная почта"}
+              .input-row
+                %input.form-control{ type:"password", placeholder:"Пароль"}
+              .input-row
+                %button.btn.btn-default Войти
+                .pull-right
+                  %a{href:"recovery.html"} Забыли<br>пароль?

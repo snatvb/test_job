@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Восстановление пароля
+    %meta{:charset => "UTF-8"}
+    %meta{:content => "", :name => "keywords"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "INDEX,FOLLOW", :name => "robots"}
+    %meta{:content => "ru", "http-equiv" => "Content-Language"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "css/normalize.css", :rel => "stylesheet"}
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+  %body
+    %main
+      .centrolize-panel
+        .center-panel.max-300
+          .padding-panel.title
+            %span Потерялся пароль
+            .pull-right
+              %a{href:"index.html"} Вход
+          .padding-panel
+            .input-rows.mt10px
+              .input-row
+                %label.pre-control
+                  Мы вышлем письмо для смены пароля вам на электронную почту,
+                  указанную при регистрации:
+                %input.form-control{ type:"email", placeholder:"Электронная почта"}
+              .input-row
+                %button.btn.btn-default Отправить
